@@ -11,7 +11,7 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- jQuery (para facilitar campos dinâmicos) -->
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <style>
@@ -58,7 +58,7 @@
               <input type="text" name="endereco" class="form-control">
             </div>
 
-            <!-- Formação (dinâmica) -->
+            <!-- Formação -->
             <div class="mb-3">
               <label class="form-label">Formações</label>
               <div id="formacoes-list">
@@ -70,7 +70,7 @@
               <button type="button" id="add-formacao" class="btn btn-sm btn-outline-primary mt-2">+ Adicionar Formação</button>
             </div>
 
-            <!-- Experiências (dinâmica) -->
+            <!-- Experiências -->
             <div class="mb-3">
               <label class="form-label">Experiências Profissionais</label>
               <div id="experiencias-list">
@@ -88,7 +88,7 @@
               <input type="text" name="habilidades" class="form-control" placeholder="Ex: HTML, CSS, JavaScript">
             </div>
 
-            <!-- Referências (dinâmica) -->
+            <!-- Referências -->
             <div class="mb-3">
               <label class="form-label">Referências Pessoais</label>
               <div id="referencias-list">
@@ -189,7 +189,7 @@
     });
     $(document).on('click', '.btn-remover-referencia', function(){ $(this).parent().remove(); });
 
-    // fallback: ao submeter, deixa o botão mostrar "gerando..."
+    // ao submeter, deixa o botão mostrar "gerando..."
     $('#form-curriculo').on('submit', function(){
       $('button[type="submit"]').prop('disabled', true).text('Gerando PDF...');
     });
