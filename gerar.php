@@ -1,7 +1,7 @@
 <?php
 // gerar.php
 // ------------------------------
-// 1) tratamento do upload da foto (segurança básica)
+// 1) tratamento do upload da foto 
 // ------------------------------
 $uploads_dir = __DIR__ . '/uploads';
 if (!is_dir($uploads_dir)) mkdir($uploads_dir, 0755, true);
@@ -24,7 +24,7 @@ if (isset($_FILES['foto']) && $_FILES['foto']['error'] === 0) {
         $erro_upload = "Arquivo de imagem inválido (use JPG/PNG até 4MB).";
     }
 } else {
-    // sem upload — mantém sem-foto.png (se você quiser coloque uma imagem default em uploads/sem-foto.png)
+    // sem upload — mantém sem-foto.png 
     $destino = 'uploads/sem-foto.png';
 }
 
@@ -56,7 +56,7 @@ if ($data_nasc) {
     }
 }
 
-// título do arquivo PDF desejado
+// título do arquivo PDF 
 $pdfNome = preg_replace('/[^A-Za-z0-9\-\_]/', '_', substr($nome,0,40)) ?: 'curriculo';
 $pdfNome .= '_' . date('Ymd_His') . '.pdf';
 ?>
@@ -159,7 +159,7 @@ $pdfNome .= '_' . date('Ymd_His') . '.pdf';
   </div>
 </div>
 
-<!-- html2pdf (usa html2canvas + jsPDF) via CDN -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 <script>
