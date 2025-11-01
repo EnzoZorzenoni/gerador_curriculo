@@ -6,10 +6,10 @@
 
 Este projeto utiliza **todas as linguagens solicitadas na atividade da disciplina Fundamentos de Programação para Internet** — **HTML, CSS, JavaScript e PHP** — integradas dentro dos arquivos `index.php` e `gerar.php`.
 
-➡️ **HTML**: estrutura principal das páginas (formulários, seções e layout).  
-➡️ **CSS / Bootstrap**: estilização e formatação visual.  
-➡️ **JavaScript / jQuery**: cálculo automático da idade e adição dinâmica de campos de experiência/formação.  
-➡️ **PHP**: tratamento dos dados, upload da foto, geração do currículo e download em PDF.
+ **HTML**: estrutura principal das páginas (formulários, seções e layout).  
+ **CSS / Bootstrap**: estilização e formatação visual.  
+ **JavaScript / jQuery**: cálculo automático da idade e adição dinâmica de campos de experiência/formação.  
+ **PHP**: tratamento dos dados, upload da foto, geração do currículo e download em PDF.
 
 Além disso, foram incluídos os arquivos `index.html`, `estilos.css` e `script.js` apenas para que o **GitHub reconheça automaticamente todas as linguagens utilizadas** na lateral do repositório.
 
